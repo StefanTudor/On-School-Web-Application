@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.li-materie:hover {
+    background-color: #ccc;
+}
+
+.is-invalid, .is-valid {
+    background-position: right 1.2rem center !important;
+}
+
+/*
+*   general classes
+*/
+
+.full-screen-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.horizontal-vertical-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.pad-2 {
+    padding: 2rem;
+}
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.pad-bot-2 {
+    padding-bottom: 2rem;
+}
+
+.pad-top-lr-2 {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.pad-lr-2 {
+    padding: 0 2rem;
+}
+
+.pad-lr-1 {
+    padding: 0 1rem;
+}
+
+.pad-bot-5 {
+    padding-bottom: 5rem;
+}
+
+.pad-bot-8 {
+    padding-bottom: 8rem;
+}
+
+.right-3 {
+    position: absolute;
+    right: 3rem;
+}
+
+.outline-0 {
+    outline: none!important;
+}
+
+/*
+ * page footer
+ */
+
+.page-footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.page-footer a {
+    color: #fff;
+}
+
+.footer-copyright {
+    max-width: 100%;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+div#text-termeni.col-md-6 {
+    text-align: right;
+}
+
+div#text-copyright.col-md-6 {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    div#text-termeni.col-md-6 {
+        text-align: center;
+    }
+}
+
+/*
+*   buttons
+*/
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn {
+    margin: 0.3rem;
+}
+
+.btn-big {
+    position: relative;
+    padding: 0.7rem 2rem 0.7rem 3rem;
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    user-select: none;
+    border-radius: 0;
+    border: 0;
+}
+
+.btn-big:before, .btn-big:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn-big:hover {
+    color: #444;
+    transition-delay: .2s;
+}
+
+.btn-big:hover:before {
+    transition-delay: 0s;
+}
+
+.btn-big:hover:after {
+    background-color: #fff;
+    transition-delay: .35s;
+}
+
+/*
+*   background
+*/
+
+.gradient {
+    background: url('/assets/img/gradient.webp') no-repeat center fixed;
+}
+
+
+
+/*
+*   login
+*/
+
+.body-login {
+    background: url('/assets/img/bg.webp') no-repeat center fixed;
+    background-size: cover;
+}
+
+#admin-h1 {
+    font-size: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.user_card {
+    height: 550px;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login_btn {
+    width: 100%;
+    background: #131212;
+    color: #fff;
+}
+
+.login_btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #144919;
+}
+
+.login_btn:active {
+    transform: translateY(1px);
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #0f3a14;
+    color: white;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user, .input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #144919;
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.links a {
+    color: #000;
+}
+
+/*
+*   admin
+*/
+
+.user-img-msg-white {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff
+}
+
+.container-admin {
+    background: url("/assets/img/adminbg.webp") no-repeat center fixed;
+    background-size: cover;
+}
+
+.card.card-board-admin {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 300ms;
+}
+
+.card.card-board-admin:hover {
+    background-color: rgba(197, 202, 204, 1);
+    box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 1);
+    transform: translate(0, -7px);
+}
+
+.col-board {
+    padding: 2rem;
+    max-width: 17rem;
+}
+
+.bg-trans {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width:1550px) {
+    .col-board {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .col-board {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .col-board {
+        padding: 2rem 0.5rem;
+    }
+}
+
+.dropdown-menu {
+    z-index: 10;
+}
+
+.from-left:before, .from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left:before {
+    right: 0;
+    border: .1rem solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left:after {
+    left: 0;
+}
+
+.from-left:hover:before, .from-left:hover:after {
+    width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .btn-big {
+        position: relative;
+        padding: 1rem;
+        font-size: 5vw;
+        letter-spacing: .8rem;
+    }
+}
+
+/*
+*   register
+*/
+
+.row-register {
+    min-width: 20rem;
+    max-width: 80rem;
+    min-height: 40rem;
+    max-height: 100rem;
+}
+
+.col-form-school {
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    background-color: #fff;
+}
+
+.col-form-admin {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: #232329;
+    color: rgb(175, 165, 165);
+}
+
+.h1-register {
+    color: #fff;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    padding: 3rem 1rem;
+}
+
+@media (max-width: 991px) {
+    .col-form-school {
+        border-top-right-radius: 0.2rem;
+        border-bottom-left-radius: 0rem;
+    }
+    .col-form-admin {
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.2rem;
+    }
+}
+
+/*
+*   elev
+*/
+
+.container-elev {
+    background: url("/assets/img/class.webp") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.trans-container {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.card.card-board-elev {
+    border-radius: .7rem;
+    transition: all ease-in-out 200ms;
+}
+
+.card.card-board-elev:hover {
+    color: #fff;
+    background-color: rgba(31, 35, 43, 0.8);
+    box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.7);
+    transform: translate(0, -7px);
+}
+
+#intrebare::placeholder {
+    color: #bbb;
+}
+
+#school-h1 {
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+    position: absolute;
+    z-index: -1;
+}
+
+#link-scoala:hover {
+    color: rgb(226, 226, 226)!important;
+}
+
+@media (max-width: 991px) {
+    #school-h1 {
+        font-size: clamp(1rem, 3vw, 1.3rem);
+        position: relative;
+    }
+}
+
+.col-yellow {
+    background-color: #e09d8b;
+}
+
+.col-bl {
+    background-color: #6b8795;
+}
+
+.col-blue {
+    background-color: #1a6c8c;
+}
+
+.col-gray-light {
+    background-color: #dfe0db;
+}
+
+.col-green {
+    background-color: #8ab839;
+}
+
+.col-orange {
+    background-color: #fece85;
+}
+
+.col-trans {
+    background-color: rgba(204, 204, 204, 0.397);
+}
+
+.badge.badge-secondary.p-2.border.border-light {
+    font-weight: 400;
+    ;
+}
+
+/*
+*   orar
+*/
+
+.container-orar {
+    background-color: #dbd4ca;
+}
+
+.tabela-orar {
+    min-width: 20rem;
+    border-radius: 10px;
+    background-color: #f0ede8;
+    -webkit-box-shadow: 4px 5px 23px -1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 4px 5px 23px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 4px 5px 23px -1px rgba(0, 0, 0, 0.66);
+}
+
+.tab-orar-head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*
+*   note
+*/
+
+/*
+*   pagina profesor
+*/
+
+.card.card-board-profesor {
+    border-radius: .7rem;
+    transition: all ease-in-out 200ms;
+}
+
+.card.card-board-profesor:hover {
+    box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.7);
+    transform: translate(0, -7px);
+}

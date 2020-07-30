@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\xampp\\htdocs\\licenta-2020\\chatbotBrain\\model.tflearn"
+all_model_checkpoint_paths: "C:\\xampp\\htdocs\\licenta-2020\\chatbotBrain\\model.tflearn"

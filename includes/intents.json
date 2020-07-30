@@ -1,0 +1,46 @@
+{
+  "intents": [
+    {
+      "tag": "salut",
+      "patterns": [ "Bună", "Salut", "Ce faci?", "E cineva?", "Hello", "Bună ziua!", "Whats up?" ],
+      "responses": [ "Salut!", "Mă bucur să te vad din nou!", "Salutare! Cu ce te pot ajuta?" ],
+      "context_set": ""
+    },
+    {
+      "tag": "la revedere",
+      "patterns": [ "bye", "Pe mai târziu", "Goodbye", "Pa", "La revedere!" ],
+      "responses": [ "Trist să te văd plecând! :(", "Vorbim mai târziu!", "La revedere!" ],
+      "context_set": ""
+    },
+    {
+      "tag": "varsta",
+      "patterns": [ "Câți ani ai?", "Care e vârsta ta?", "Ce vârstă ai?", "Vârstă?" ],
+      "responses": [ "M-am născut în 2020." ],
+      "context_set": ""
+    },
+    {
+      "tag": "nume",
+      "patterns": [ "Cum te cheamă?", "Cum te numești?", "Nume?" ],
+      "responses": [ "Sunt Robo, prietenul tău virtual!", "Poți să îmi spui Robo.", "Sunt Robo!" ],
+      "context_set": ""
+    },
+    {
+      "tag": "atom",
+      "patterns": [ "Ce este atomul?", "Ce este un atom?", "Atom" ],
+      "responses": [ "Un atom este cea mai mică unitate constitutivă a materiei comune care are proprietățile unui element chimic." ],
+      "context_set": ""
+    },
+    {
+      "tag": "radical",
+      "patterns": [ "Ce este radicalul?", "Ce este un radical?", "Radical" ],
+      "responses": [ "În matematică, radicalul unui număr reprezintă un alt număr, care ridicat la o putere cu exponent fracționar este egal cu numărul dat." ],
+      "context_set": ""
+    },
+    {
+      "tag": "inertie",
+      "patterns": [ "Ce este inerția?", "Ce este inertia?", "Inerția", "Inertie"],
+      "responses": [ "Inerția este rezistența oricărui corp cu masă la modificarea stării sale de repaus sau de mișcare rectilinie uniformă atunci când asupra sa nu acționează forțe externe." ],
+      "context_set": ""
+    }
+  ]
+}
